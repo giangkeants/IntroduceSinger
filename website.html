@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/website.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <style>
+        .swiper {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 300px;
+            height: 300px;
+        }
+        
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+        }
+    </style>
+</head>
+
+
+<body>
+    <section id="head">
+        <div class="circle"> </div>
+        <header>
+            <img src="./images/iconmusic.png" alt="">
+            <ul>
+                <li><a href="#"> Home</a></li>
+                <li><a href="#"> Song</a></li>
+                <li><a href="#"> Singer</a></li>
+                <li><a href="#"> About</a></li>
+                <li><a href="#"> Help</a></li>
+            </ul>
+        </header>
+        <div class="contain">
+            <div class="textBox">
+                <h1> Music can heal</h1>
+                <p>Noo can captivate an audience with his natural ability. He doesn't have to work at being himself. His performance speaks for itself. He connects with his fans as if they were all friends and knew each other for a lifetime. He captures
+                    their attention and gives them a wonderful experience they will never forget. Thanks Noo.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div class="slide">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./images/05_BUI_ANH_TUAN__2_-removebg-preview.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/hananhtuan-removebg-preview.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/tieu-su-ca-si-noo-phuoc-thinh-2157-removebg-preview.png" />
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+
+        <ul class="social_icon">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+        </ul>
+    </section>
+
+    <main>
+
+        <section id="BAT">
+            <div class="contain">
+                <div class="card">
+                    <img src="./images/ky-niem-6-nam-thanh-lap-fc-bui-anh-tuan-choi-troi-to-chuc-lam-mu-d5fa27-removebg-preview.png" alt="">
+
+                    <h2>Bui Anh Tuan</h2>
+                    <p>Noo can captivate an audience with his natural ability. He doesn't have to work at being himself. His performance speaks for itself. He connects with his fans as if they were all friends and knew each other for a lifetime. He captures
+                        their attention and gives them a wonderful experience they will never forget. Thanks Noo.</p>
+                    <a href="#">Contact now</a>
+                </div>
+                <img src="./images/05_BUI_ANH_TUAN__2_-removebg-preview.png" alt="">
+            </div>
+        </section>
+
+
+
+
+        <section id="HAT">
+            <div class="contain">
+                <div class="card">
+                    <img src="./images/HATaa.png" alt="">
+
+                    <h2>Ha Anh Tuan</h2>
+                    <p>Noo can captivate an audience with his natural ability. He doesn't have to work at being himself. His performance speaks for itself. He connects with his fans as if they were all friends and knew each other for a lifetime. He captures
+                        their attention and gives them a wonderful experience they will never forget. Thanks Noo.</p>
+                    <a href="#">Contact now</a>
+                </div>
+                <img src="./images/hananhtuan-removebg-preview.png" alt="">
+            </div>
+        </section>
+
+
+
+
+        <section id="NOO">
+            <div class="contain">
+                <div class="card">
+
+                    <h2>Noo Phuoc Thinh</h2>
+                    <p>Noo can captivate an audience with his natural ability. He doesn't have to work at being himself. His performance speaks for itself. He connects with his fans as if they were all friends and knew each other for a lifetime. He captures
+                        their attention and gives them a wonderful experience they will never forget. Thanks Noo.</p>
+                    <a href="#">Contact now</a>
+                </div>
+                <img src="./images/tieu-su-ca-si-noo-phuoc-thinh-2157-removebg-preview.png" alt="">
+            </div>
+        </section>
+    </main>
+
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,413 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#head {
+    background: linear-gradient(to right, #1e130c, rgb(197, 121, 109));
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+}
+
+#head header {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px;
+    position: relative;
+}
+
+#head a {
+    font-family: cursive;
+    text-decoration: none;
+    color: #fff;
+    font-size: large;
+}
+
+#head header ul {
+    display: flex;
+    list-style: none;
+}
+
+#head header ul li a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 60px;
+    font-weight: 400;
+}
+
+#head header img {
+    width: 80px;
+    margin-left: -63px;
+}
+
+#head .social_icon {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    display: flow-root;
+    list-style: none;
+}
+
+#head .social_icon {
+    color: #fff;
+}
+
+#head .social_icon a {
+    color: rgb(197, 121, 109);
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    margin-left: -30px;
+    margin-top: 20px;
+    display: block;
+    /* display: inline-block; */
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    transition: .5s;
+    box-shadow: 6px 8px 6px black;
+}
+
+#head .social_icon a:hover {
+    background: linear-gradient(-57deg, #1e130c, rgb(197, 121, 109));
+    color: #fff;
+    transform: translateX(10px);
+    box-shadow: 0px 0px 0px black;
+}
+
+#head .contain {
+    position: relative;
+    display: flex;
+    padding: 50px;
+}
+
+#head .contain .textBox {
+    width: 50%;
+    text-align: left;
+    padding: 100px;
+    color: white;
+    font-family: cursive;
+}
+
+#head .contain .textBox a {
+    position: absolute;
+    top: 65%;
+    left: 10%;
+    display: flex;
+    list-style: none;
+    color: #fff;
+    background: transparent;
+    width: 125px;
+    height: 47px;
+    margin-left: 5px;
+    margin-top: 10px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+    transition: .5s;
+    box-shadow: 6px 8px 6px black;
+    animation: show 1s linear infinite;
+}
+
+@keyframes show {
+    0% {
+        background: rgb(197, 121, 109);
+    }
+    100% {
+        background: transparent;
+    }
+}
+
+#head .contain .textBox a:hover {
+    background: rgb(197, 121, 109);
+    color: black;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #fff, 0 0 25px #fff, 0 0 50px #fff, 0 0 100px #fff;
+}
+
+#head .contain .slide {
+    width: 50%;
+    text-align: center;
+}
+
+#BAT {
+    background: linear-gradient(-57deg, #1e130c, rgb(197, 121, 109));
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#BAT .contain {
+    width: 50%;
+    background: linear-gradient(-57deg, #1e130c, rgb(197, 121, 109));
+    height: 400px;
+    position: absolute;
+}
+
+#BAT .contain:hover {
+    box-shadow: 0 0 5px #fff, 0 0 25px #fff, 0 0 50px #fff, 0 0 100px #fff;
+}
+
+#BAT .contain .card {
+    width: 50%;
+    height: 100%;
+    padding: 40px 20px;
+    color: #fff;
+    position: absolute;
+    top: -30%;
+    left: 20%;
+    transition: 2s;
+    opacity: 0;
+    font-family: cursive;
+}
+
+#BAT .contain .card a {
+    position: absolute;
+    display: flex;
+    list-style: none;
+    color: #fff;
+    background: rgb(197, 121, 109);
+    width: 125px;
+    height: 40px;
+    margin-left: 5px;
+    margin-top: 10px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    transition: .5s;
+    box-shadow: 6px 8px 6px #1e130c;
+}
+
+#BAT .contain:hover .card {
+    left: 0%;
+    opacity: 1;
+}
+
+#BAT .contain:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(57deg, #1e130c, rgb(197, 121, 109));
+    clip-path: circle(25% at 50% 50%);
+    transition: 2s;
+}
+
+#BAT .contain:hover:before {
+    clip-path: circle(100% at 50% 50%);
+}
+
+#BAT .contain img:nth-child(1) {
+    position: relative;
+    width: 300px;
+    top: 14%;
+    left: 60%;
+}
+
+#BAT .contain img:nth-child(2) {
+    position: relative;
+    width: 300px;
+    top: 18%;
+    left: 62%;
+    transition: 2s;
+    filter: blur(200px);
+}
+
+#BAT .contain:hover img:nth-child(2) {
+    filter: blur(0px);
+    position: absolute;
+}
+
+#HAT {
+    background: linear-gradient(-57deg, #1e130c, rgb(197, 121, 109));
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#HAT .contain {
+    width: 50%;
+    background: linear-gradient(-57deg, #1e130c, rgb(197, 121, 109));
+    height: 400px;
+    position: absolute;
+}
+
+#HAT .contain:hover {
+    box-shadow: 0 0 5px #fff, 0 0 25px #fff, 0 0 50px #fff, 0 0 100px #fff;
+}
+
+#HAT .contain .card {
+    width: 50%;
+    height: 100%;
+    padding: 40px 20px;
+    color: #fff;
+    position: absolute;
+    top: -60%;
+    left: 20%;
+    transition: 2s;
+    opacity: 0;
+    font-family: cursive;
+}
+
+#HAT .contain .card a {
+    position: absolute;
+    display: flex;
+    list-style: none;
+    color: #fff;
+    background: rgb(197, 121, 109);
+    width: 125px;
+    height: 40px;
+    margin-left: 5px;
+    margin-top: 10px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    transition: .5s;
+    box-shadow: 6px 8px 6px #1e130c;
+}
+
+#HAT .contain:hover .card {
+    left: 0%;
+    opacity: 1;
+}
+
+#HAT .contain:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(57deg, #1e130c, rgb(197, 121, 109));
+    clip-path: circle(25% at 50% 50%);
+    transition: 2s;
+}
+
+#HAT .contain:hover:before {
+    clip-path: circle(100% at 50% 50%);
+}
+
+#HAT .contain img:nth-child(1) {
+    position: relative;
+    width: 300px;
+    top: 30%;
+    left: 60%;
+}
+
+#HAT .contain img:nth-child(2) {
+    position: relative;
+    width: 300px;
+    top: 18%;
+    left: 62%;
+    transition: 2s;
+    filter: blur(200px);
+}
+
+#HAT .contain:hover img:nth-child(2) {
+    filter: blur(0px);
+    position: absolute;
+}
+
+#NOO {
+    background: linear-gradient(-57deg, #1e130c, rgb(197, 121, 109));
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#NOO .contain {
+    width: 50%;
+    background: linear-gradient(-57deg, #1e130c, rgb(197, 121, 109));
+    height: 400px;
+    position: absolute;
+}
+
+#NOO .contain:hover {
+    box-shadow: 0 0 5px #fff, 0 0 25px #fff, 0 0 50px #fff, 0 0 100px #fff;
+}
+
+#NOO .contain .card {
+    width: 50%;
+    height: 100%;
+    padding: 40px 20px;
+    color: #fff;
+    position: absolute;
+    top: 0%;
+    left: 20%;
+    transition: 2s;
+    opacity: 0;
+    font-family: cursive;
+}
+
+#NOO .contain .card a {
+    position: absolute;
+    display: flex;
+    list-style: none;
+    color: #fff;
+    background: rgb(197, 121, 109);
+    width: 125px;
+    height: 40px;
+    margin-left: 5px;
+    margin-top: 10px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    transition: .5s;
+    box-shadow: 6px 8px 6px #1e130c;
+}
+
+#NOO .contain:hover .card {
+    left: 0%;
+    opacity: 1;
+}
+
+#NOO .contain:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(57deg, #1e130c, rgb(197, 121, 109));
+    clip-path: circle(25% at 50% 50%);
+    transition: 2s;
+}
+
+#NOO .contain:hover:before {
+    clip-path: circle(100% at 50% 50%);
+}
+
+#NOO .contain img:nth-child(2) {
+    position: relative;
+    width: 300px;
+    top: 10%;
+    left: 60%;
+    transition: 2s;
+    filter: blur(200px);
+}
+
+#NOO .contain:hover img:nth-child(2) {
+    filter: blur(0px);
+    position: absolute;
+}
